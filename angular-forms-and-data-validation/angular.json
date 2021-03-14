@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "angular-forms-data-binding-validation": {
+    "angular-forms-and-data-validation": {
       "projectType": "application",
       "schematics": {},
       "root": "",
@@ -13,7 +13,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/angular-forms-data-binding-validation",
+            "outputPath": "dist/angular-forms-and-data-validation",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",
@@ -61,18 +61,18 @@
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
           "options": {
-            "browserTarget": "angular-forms-data-binding-validation:build"
+            "browserTarget": "angular-forms-and-data-validation:build"
           },
           "configurations": {
             "production": {
-              "browserTarget": "angular-forms-data-binding-validation:build:production"
+              "browserTarget": "angular-forms-and-data-validation:build:production"
             }
           }
         },
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "angular-forms-data-binding-validation:build"
+            "browserTarget": "angular-forms-and-data-validation:build"
           }
         },
         "test": {
@@ -109,16 +109,16 @@
           "builder": "@angular-devkit/build-angular:protractor",
           "options": {
             "protractorConfig": "e2e/protractor.conf.js",
-            "devServerTarget": "angular-forms-data-binding-validation:serve"
+            "devServerTarget": "angular-forms-and-data-validation:serve"
           },
           "configurations": {
             "production": {
-              "devServerTarget": "angular-forms-data-binding-validation:serve:production"
+              "devServerTarget": "angular-forms-and-data-validation:serve:production"
             }
           }
         }
       }
     }
   },
-  "defaultProject": "angular-forms-data-binding-validation"
+  "defaultProject": "angular-forms-and-data-validation"
 }

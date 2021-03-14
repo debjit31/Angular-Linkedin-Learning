@@ -25,7 +25,7 @@ module.exports = function (config) {
       suppressAll: true // removes the duplicated traces
     },
     coverageReporter: {
-      dir: require('path').join(__dirname, './coverage/angular-forms-data-binding-validation'),
+      dir: require('path').join(__dirname, './coverage/angular-forms-and-data-validation'),
       subdir: '.',
       reporters: [
         { type: 'html' },

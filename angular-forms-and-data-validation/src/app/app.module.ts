@@ -1,11 +1,11 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-import { ReactiveFormsModule } from '@angular/forms';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { OrderSheetComponent } from './counter/order-sheet/order-sheet.component';
-import { DebugPanelComponent } from './counter/debug-panel/debug-panel.component';
+import { OrderSheetComponent } from './components/order-sheet/order-sheet.component';
+import { DebugPanelComponent } from './components/debug-panel/debug-panel.component';
+import { ReactiveFormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -15,7 +15,7 @@ import { DebugPanelComponent } from './counter/debug-panel/debug-panel.component
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule,
+    AppRoutingModule, 
     ReactiveFormsModule
   ],
   providers: [],

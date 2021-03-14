@@ -20,16 +20,16 @@ describe('AppComponent', () => {
     expect(app).toBeTruthy();
   });
 
-  it(`should have as title 'angular-forms-data-binding-validation'`, () => {
+  it(`should have as title 'angular-forms-and-data-validation'`, () => {
     const fixture = TestBed.createComponent(AppComponent);
     const app = fixture.componentInstance;
-    expect(app.title).toEqual('angular-forms-data-binding-validation');
+    expect(app.title).toEqual('angular-forms-and-data-validation');
   });
 
   it('should render title', () => {
     const fixture = TestBed.createComponent(AppComponent);
     fixture.detectChanges();
     const compiled = fixture.nativeElement;
-    expect(compiled.querySelector('.content span').textContent).toContain('angular-forms-data-binding-validation app is running!');
+    expect(compiled.querySelector('.content span').textContent).toContain('angular-forms-and-data-validation app is running!');
   });
 });
